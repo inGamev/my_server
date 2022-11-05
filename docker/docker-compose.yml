@@ -1,0 +1,10 @@
+version: '3'
+services:
+  blog:
+    image: registry.cn-hangzhou.aliyuncs.com/leyili/myblog
+    container_name: myblog
+    ports:
+      - "9001:8080"
+    volumes:
+      - /mnt/user/appdata/myblog:/home/ruoyi
+    network_mode: bridge
